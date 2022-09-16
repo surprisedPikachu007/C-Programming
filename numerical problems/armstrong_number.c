@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int n = 153;
+    int n = 1;
     int original = n;
     int sum = 0, count = 0;
 
@@ -13,8 +13,8 @@ int main() {
     n = original;
     while(n != 0) {
         int num = n%10;
-        int partial_sum = num;
-        for(int i = 0; i < count-1; i++)
+        int partial_sum = 1;
+        for(int i = 0; i < count; i++)
             partial_sum *= num;
 
         sum += partial_sum;
