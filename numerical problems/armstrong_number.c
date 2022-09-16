@@ -3,11 +3,21 @@
 int main() {
     int n = 153;
     int original = n;
-    int sum = 0;
+    int sum = 0, count = 0;
 
     while(n != 0) {
+        count++;
+        n /= 10;
+    }
+
+    n = original;
+    while(n != 0) {
         int num = n%10;
-        sum += num * num * num;
+        int partial_sum = num;
+        for(int i = 0; i < count-1; i++)
+            partial_sum *= num;
+
+        sum += partial_sum;
         n /= 10;
     }
 
