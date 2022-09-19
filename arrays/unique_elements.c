@@ -19,7 +19,6 @@ int main() {
     for(int i = 0; i < n; i++) {
         int j;
         for(j = 0; j < i; j++) {
-            if(i == j) continue;
             if(arr[i] == arr[j]) break;
         }
         if(j == i) printf(" %d",arr[i]);
