@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define isspecial(i) (ch[i] >= 32 && ch[i] <= 47) || (ch[i] >= 58 && ch[i] <= 64) || (ch[i] >= 91 && ch[i] <= 96)  || (ch[i] >= 123 && ch[i] <= 126)
+#define isspecial(i) (ch == 9) || (ch == 10) || (ch == 13) || (ch[i] >= 32 && ch[i] <= 47) || (ch[i] >= 58 && ch[i] <= 64) || (ch[i] >= 91 && ch[i] <= 96)  || (ch[i] >= 123 && ch[i] <= 126)
 
 int main() {
     char ch[] = "$(dollar)! = (rupees/75)";
